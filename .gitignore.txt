@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: #fff;
+    font-family: Helvetica, Verdana, sans-serif;
+    font-size: 62.5%;
+}
+
+.container{
+    width: 95%;
+    max-width: 1366px;
+    margin: 0 auto;
+    background-color: #ffffff;
+
+}
+
+header{
+    box-shadow: 0px 1px 15px #414142;
+}
+
+header h1{
+    float: left;
+}
+
+header h1 a{
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 5px;
+    text-indent: -999em;
+    background: url('http://studioleopard.pl/wp-content/themes/studioleopard/img/leoprard_logo.png') top left no-repeat;
+    background-size: 100%;
+}
+
+header nav ul li{
+    float: right;
+    padding-right:20px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+  list-style-type: none;
+}
+
+header nav ul li a{
+    display: block;
+    font-size: 1.4em;
+    color: #414142;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:0 10px 0 10px;
+}
+
+
+header nav li a:hover{
+    background: #414142;
+    color: #fff;
+}
+
+.clearfix:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.hamburger{
+    display: none;
+    background: #414142;
+    color: #fff;
+    padding: 10px 15px;
+    float: right;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+.hamburger:before { content:'\2630'; }
+
+header nav ul,
+header nav ul.visible{
+    display: block;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+
+    header nav{
+        width: 100%;
+    }
+
+    header nav ul li{
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        padding: 0;
+    }
+
+    header nav ul li a{
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    header nav ul{
+        display: none;  
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+}

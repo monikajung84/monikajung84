@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Bootstrap</title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header navbar-right">
+                	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        					<span class="sr-only">Toggle navigation</span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+      				</button>
+                    <a class="navbar-brand" href="#">
+                    	<img src="//placehold.it/150x30"></a>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      				<ul class="nav navbar-nav navbar-right">
+        				<li class="dropdown">
+          					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+          					<ul class="dropdown-menu">
+								<li><a href="#">Home</a></li>
+            					<li><a href="#">Galleria</a></li>
+            					<li><a href="#">Podróże</a></li>
+            					<li><a href="#" data-toggle="popover" title="Phone: 22 1234567" data-content="Some content inside the popover">Contact As</a></li>
+            					<li role="separator" class="divider"></li>
+            				</ul>
+            			</li>
+            		</ul>
+            	</div> 
+        </nav>
+	<section class="container-fluid jumbotron text-center flex">
+		<div id="start" class="hero">
+			<h1>In the world <small>My world</small></h1>
+		  		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quas at molestiae ea. Quaerat eligendi autem perferendis nesciunt voluptatum. Atque accusamus consequuntur alias eveniet iusto!</p>
+	    	<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">More</button>
+				<div id="demo" class="collapse">
+    				Lorem ipsum dolor text....
+				</div>
+		</div>
+	</section>
+	<section class="container-fluid">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+    			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    			<li data-target="#myCarousel" data-slide-to="1"></li>
+    			<li data-target="#myCarousel" data-slide-to="2"></li>
+    			<li data-target="#myCarousel" data-slide-to="3"></li>
+    			<li data-target="#myCarousel" data-slide-to="4"></li>
+    			<li data-target="#myCarousel" data-slide-to="5"></li>
+			</ol>
+				<div class="carousel-inner" role="listbox">
+  					<div class="item active example-1">
+  						<img src="https://cdn.pixabay.com/photo/2013/02/09/10/57/seagull-79658_960_720.jpg" alt="mewa">
+  							<div class="carousel-caption">
+                    			Zdjęcie 1
+                    		</div>
+  					</div>
+					<div class="item example-2">
+						<img src="https://cdn.pixabay.com/photo/2014/01/04/13/51/shore-238515_960_720.jpg" alt="las">
+							<div class="carousel-caption">
+                    			Zdjęcie 2
+                    		</div>
+  					</div>
+  					<div class="item example-3">
+  						<img src="https://cdn.pixabay.com/photo/2014/02/24/18/24/pine-273826_960_720.jpg" alt="las we mgle">
+  							<div class="carousel-caption">
+                    			Zdjęcie 3
+                    		</div>
+  					</div>
+  					<div class="item example-4">
+  						<img src="https://cdn.pixabay.com/photo/2013/07/18/10/57/waterfall-163579_960_720.jpg" alt="wodospad">
+  							<div class="carousel-caption">
+                    			Zdjęcie 4
+                    		</div>
+  					</div>
+  					<div class="item example-5">
+  						<img src="https://cdn.pixabay.com/photo/2017/08/09/14/33/hill-2614707__340.jpg" alt="niebo">
+  							<div class="carousel-caption">
+  								Zdjęcie 5
+                    		</div>
+  					</div>
+				</div>
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+  					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+  					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  					<span class="sr-only">Next</span>
+				</a>
+	</section>
+	<section class="container-fluid">
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  			Więcej informacji
+		</button>
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4>Świat naszymi oczami</h4>
+					</div>
+					<div class="modal-body">
+						<h4>O autorce</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sequi, hic iure, laboriosam in sapiente obcaecati distinctio fuga. Nam in facilis facere quaerat repudiandae porro, dolore explicabo nisi atque nesciunt.</p>
+					</div>
+					<div class="modal-body">
+						<h4>Podróże</h4>
+						<p>Najciekawsze miejsca czyli 7 cudów przyrody.</p>
+					</div>
+					<div class="modal-body">
+						<h4>Podróże</h4>
+							<p>1. Wielki Kanion, Stany Zjednoczone.</p>
+							<p>2. Parícutin, Meksyk.</p>
+							<p>3. Zorza polarna, Islandia.</p>
+							<p>4. Wodospady Wiktorii, Zambezi/Zimbabwe/Zambia.</p>
+							<p>5. Port w Rio de Janeiro, Brazylia.</p>
+							<p>6. Wielka Rafa Koralowa, Australia.</p>
+							<p>7. Mount Everest, Nepal.</p>
+					</div>
+					<div class="modal-footer">
+						<p>Najwspanialsze dzieła natury-wspomnienie na całe życie.</p>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container">
+        <ul class="nav nav-pills nav-justified">
+            <li class=""><a data-toggle="tab" href="#world" aria-expanded="false">Świat</a></li>
+            <li class=""><a data-toggle="tab" href="#menu1" aria-expanded="false">Podróże</a></li>
+            <li class="active"><a data-toggle="tab" href="#menu2" aria-expanded="true">Galeria</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="world" class="tab-pane fade">
+                <h3>Świat</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Podróże</h3>
+                <p>Siedem Cudów Świata odnosi się do najbardziej imponujących miejsc stworzonych przez człowieka. Siedem Cudów Świata Natury to z kolei najpiękniejsze przyrodniczo miejsca na Ziemi. Sprawdź w galerii, gdzie one się znajdują.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade active in">
+                <h3>Galeria</h3>
+                <p>1. Wielki Kanion, Stany Zjednoczone.</p>
+                	<img src="https://content.skyscnr.com/b1209df4c165010c2087845a959046d6/GettyImages-178981721.jpg?resize=800px:99999px&quality=75" alt="Wielki Kanion">
+                <p>2. Parícutin, Meksyk</p>
+                	<img src="https://content.skyscnr.com/0de2f308f836ed4712d864beded49d72/paricutin.jpg?resize=800px:99999px&quality=75" alt="Parícutin">
+                <p>3. Zorza polarna, Islandia.</p>
+                	<img src="https://content.skyscnr.com/9221bea1a2c6f6654161943bc0a1c929/northern-lights.jpg?resize=800px:99999px&quality=75" alt="Zorza polarna">
+                <p>4. Wodospady Wiktorii, Zambezi/Zimbabwe/Zambia.</p>
+                	<img src="https://content.skyscnr.com/75dc7732509d381dd0abe23fb2c5debe/GettyImages-515068175.jpg?resize=800px:99999px&quality=75" alt="Wodospady Wiktorii">
+                <p>5. Port w Rio de Janeiro, Brazylia.</p>
+                	<img src="https://content.skyscnr.com/ddebc04c604cca4770728c4938b023f3/GettyImages-177801872.jpg?resize=800px:99999px&quality=75" alt="Port w Rio de Janeiro">
+                <p>6. Wielka Rafa Koralowa, Australia.</p>
+                	<img src="https://content.skyscnr.com/9cbf79dcea8998b23adfaf49aeb83765/great-barrier-reef.jpg?resize=800px:99999px&quality=75" alt="Wielka Rafa Koralowa">
+                <p>7. Mount Everest, Nepal.</p>
+                	<img src="https://content.skyscnr.com/65883024aa058473743052d515039830/mount-everest.jpg?resize=800px:99999px&quality=75" alt="Mount Everest">
+            </div>
+        </div>
+    </section>
+	<footer class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container-fluid">  
+            <p class="navbar-text text-center">The world around us</p>
+            <p class="navbar-text text-center"><a href="http://world.com" class="navbar-link">world.com</a> ©2017</p>
+        </div>
+    </footer>
+</body>
+</html>
